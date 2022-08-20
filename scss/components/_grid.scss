@@ -1,0 +1,9 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent-grid);
+}
+
+.grid__cards {
+    flex-basis: calc((100% - var(--indent-grid) * (var(--item) - 1)) / var(--item));
+}

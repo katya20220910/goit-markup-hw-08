@@ -1,0 +1,21 @@
+.client__list {
+  --item: 6;
+}
+.client__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: var(--icon);
+  transition: color var(--anime-basic);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-text-cl);
+  }
+}
+.client__icon {
+    fill: currentColor;
+}

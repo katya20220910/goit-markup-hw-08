@@ -1,0 +1,37 @@
+.nav {
+  color: var(--nav-text-cl);
+  margin-right: auto;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.nav__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--anime-basic);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-text-cl);
+    }
+}
+.nav__link--current {
+  position: relative;
+  color: var(--accent-text-cl);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-text-cl);
+    border-radius: 2px;
+  }
+}

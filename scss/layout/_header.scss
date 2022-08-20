@@ -1,0 +1,37 @@
+.header {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--border-header);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 93px;
+}
+.header__logo--part {
+  color: var(--nav-text-cl);
+}
+.header__contact {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header__link-contact {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--anime-basic);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-text-cl);
+  }
+}
+.header__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
