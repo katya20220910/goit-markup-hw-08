@@ -1,6 +1,11 @@
 .nav {
-  color: var(--nav-text-cl);
-  margin-right: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    color: var(--nav-text-cl);
+    margin-right: auto;
+  }
 }
 .nav__list {
   display: flex;
@@ -17,7 +22,7 @@
   &:focus,
   &:hover {
     color: var(--accent-text-cl);
-    }
+  }
 }
 .nav__link--current {
   position: relative;

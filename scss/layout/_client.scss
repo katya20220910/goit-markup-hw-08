@@ -1,15 +1,33 @@
 .client__list {
-  --item: 6;
+  --item: 2;
+
+  @media screen and (min-width: 768px) {
+    --item: 3;
+    }
+  
+    @media screen and (min-width: 1200px) {
+    --item: 6;
+    }
+
 }
 .client__logo {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 92px;
+  min-width: 210px;
   border: 1px solid currentColor;
   border-radius: 4px;
   color: var(--icon);
   transition: color var(--anime-basic);
+
+  @media screen and (min-width: 768px) {
+      min-width: 226px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      min-width: 170px;
+    }
 
   &:focus,
   &:hover {

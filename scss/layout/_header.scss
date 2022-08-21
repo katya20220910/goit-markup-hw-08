@@ -9,22 +9,60 @@
   align-items: center;
 }
 .header__logo {
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  line-height: calc (28 / 24);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: calc (31 / 26);
+  }
 }
 .header__logo--part {
   color: var(--nav-text-cl);
 }
 .header__contact {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
 }
 .header__link-contact {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color var(--anime-basic);
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-size: 12px;
+    line-height: calc (14 / 12);
+    margin-bottom: 10px;
+    align-items: center;
+    transition: color var(--anime-basic);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: calc (16 / 14);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--anime-basic);
+  }
 
   &:focus,
   &:hover {
@@ -32,6 +70,21 @@
   }
 }
 .header__icon {
-  margin-right: 10px;
-  fill: currentColor;
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+    fill: currentColor;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.menu-btn {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  top: 10px;
+  right: 15px;
 }

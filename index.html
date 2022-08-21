@@ -13,14 +13,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/mail.min.css"/>
-  <link rel="stylesheet" href="./css/styles.css"/>
+  <link rel="stylesheet" href="./css/mail.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body class="data-page">
   <header class="header">
     <div class="container header__container">
       <a class="logo header__logo" href="/" lang="en">Web<span class="header__logo--part">Studio</span></a>
+      <button class="menu-btn" type="button" data-menu-open>
+        <svg class="menu-btn__icon" width="40" height="40" aria-label="menu-btn">
+          <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
+
       <nav class="nav">
         <ul class="list nav__list">
           <li class="nav__item">
@@ -89,8 +95,7 @@
             </div>
             <h3 class="about__title">Планирование</h3>
             <p class="about__text">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
+              Равным образом консультация с широким активом в значительной степени обуславливает.</p>
           </li>
           <li class="grid__cards">
             <div class="about__group">
@@ -336,7 +341,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container footer-container">
       <div class="footer__part">
         <a class="logo footer__logo" href="/" lang="en">Web<span class="footer__logo--part">Studio</span></a>
@@ -403,7 +408,7 @@
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal__btn" data-modal-close>
@@ -461,6 +466,7 @@
     </div>
   </div>
   <script src="./js/model.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
