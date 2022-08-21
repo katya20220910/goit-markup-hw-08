@@ -341,7 +341,7 @@
       </div>
     </section>
   </main>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container footer-container">
       <div class="footer__part">
         <a class="logo footer__logo" href="/" lang="en">Web<span class="footer__logo--part">Studio</span></a>
@@ -408,7 +408,7 @@
         </form>
       </div>
     </div>
-  </footer> -->
+  </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal__btn" data-modal-close>
@@ -466,18 +466,20 @@
     </div>
   </div>
 
-  <div class="mobile is-open" data-menu>
-    <div class="mobile-menu">
+  <div class="mobile is-hidden is-open" data-menu>
+    <div class="mobile-menu is-open">
       <button class="menu__btn" type="button" data-menu-close>
         <svg class="menu__close" width="40" height="40" aria-label="close">
             <use class="menu__close-icon" href="./images/symbol-defs.svg#icon-close_40px"></use>
         </svg>
       </button>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
+      <ul class="list menu__list">
+        <li class="menu__item">
+          <a class="menu__link link" href="index.html">Студия</a></li>
+        <li class="menu__item">
+          <a class="menu__link link" href="portfolio.html">Портфолио</a></li>
+        <li class="menu__item">
+          <a class="menu__link link" href="">Контакты</a></li>
       </ul>
     </div>
   </div>
