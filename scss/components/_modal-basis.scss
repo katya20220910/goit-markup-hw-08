@@ -21,8 +21,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
   transition: transform var(--anime-basic);
@@ -32,6 +32,11 @@
 .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
     }
+
+            @media screen and (min-width: 1200px) {
+              width: 528px;
+                height: 581px;
+            }
 }
 .modal__btn {
   position: absolute;

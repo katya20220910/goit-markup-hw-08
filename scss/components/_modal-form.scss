@@ -6,10 +6,15 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-cl);
+
+  @media screen and (min-width: 1200px) {
+line-height: calc(23 / 20);
+    }
+
 }
 .form__group {
   margin-bottom: 20px;
@@ -113,11 +118,17 @@
 }
 .form__agreement-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   user-select: none;
   text-underline-position: under;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+      line-height: calc(24 / 14);
+    }
+
 }
 .form__agreement-link {
   color: var(--accent-text-cl);

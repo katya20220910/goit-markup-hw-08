@@ -13,14 +13,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/mail.min.css"/>
-  <link rel="stylesheet" href="./css/styles.css"/>
+  <link rel="stylesheet" href="./css/mail.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
   <header class="header">
     <div class="container header__container">
-      <a class="logo header__logo" href="/" lang="en">Web<span class="header__logo--part">Studio</span></a>
+      <a class="logo header__logo" href="./" lang="en">Web<span class="header__logo--part">Studio</span></a>
+      <button class="menu-btn" type="button" data-menu-open>
+        <svg class="menu-btn__icon" width="40" height="40" aria-label="menu-btn">
+          <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
       <nav class="nav">
         <ul class="list nav__list">
           <li class="nav__item"><a class="link nav__link" href="index.html">Студия</a></li>
@@ -73,7 +78,17 @@
           <li class="grid__cards project__item">
             <a class="link project__link" href="">
               <div class="project__card">
-                <img src="./images/img8.jpg" alt="Технокряк" width="370" height="294" />
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images\project\img@1x_s.jpg, ./images\project\img@2x_s.jpg" />
+
+                  <source media="(min-width: 768px)"
+                    srcset="./images\project\img@1x-m.jpg, ./images\project\img@2x-m.jpg" />
+
+                  <source media="(max-width: 767px)"
+                    srcset="./images\project\img@1x_lg.jpg, ./images\project\img@2x_lg.jpg" />
+                </picture>
+                <img src="./images\project\img@1x_s.jpg" alt="Технокряк" width="450" height="294" />
                 <div class="project__overlay">
                   <p class="project__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -82,43 +97,64 @@
                   </p>
                 </div>
               </div>
-                <div class="project__name">
-                  <h2 class="project__title">Технокряк</h2>
-                  <p class="project__text">Веб-сайт</p>
-                </div>
-               </a>
+              <div class="project__name">
+                <h2 class="project__title">Технокряк</h2>
+                <p class="project__text">Веб-сайт</p>
+              </div>
+            </a>
           </li>
           <li class="grid__cards project__item">
             <a class="link project__link" href="">
               <div class="project__card">
-              <img src="./images/img9.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294" />
-            <div class="project__overlay">
-              <p class="project__overlay-text">
-                Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                компании или частном лице.
-              </p>
-            </div>
-            </div>
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images\project\img@1x_s-1.jpg, ./images\project\img@2x_s-1.jpg" />
+
+                  <source media="(min-width: 768px)"
+                    srcset="./images\project\img@1x-m-1.jpg, ./images\project\img@2x-m-1.jpg" />
+
+                  <source media="(max-width: 767px)"
+                    srcset="./images\project\img@1x_lg-1.jpg, ./images\project\img@2x_lg-1.jpg" />
+                </picture>
+                <img src="./images\project\img@1x_s-1.jpg" alt="Постер New Orlean vs Golden Star" width="450"
+                  height="294" />
+                <div class="project__overlay">
+                  <p class="project__overlay-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                    компании или частном лице.
+                  </p>
+                </div>
+              </div>
               <div class="project__name">
                 <h2 class="project__title">
                   Постер<span lang="en">New Orlean vs Golden Star</span>
                 </h2>
                 <p class="project__text">Дизайн</p>
               </div>
-              </a>
+            </a>
           </li>
           <li class="grid__cards project__item">
             <a class="link project__link" href="">
-            <div class="project__card">
-              <img src="./images/img10.jpg" alt="Ресторан Seafood" width="370" height="294" />
-              <div class="project__overlay">
-                <p class="project__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                  компании или частном лице.
-                </p>
-              </div>
+              <div class="project__card">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="./images\project\img@1x_s-2.jpg, ./images\project\img@2x_s-2.jpg" />
+
+                  <source media="(min-width: 768px)"
+                    srcset="./images\project\img@1x-m-2.jpg, ./images\project\img@2x-m-2.jpg" />
+
+                  <source media="(max-width: 767px)"
+                    srcset="./images\project\img@1x_lg-2.jpg, ./images\project\img@2x_lg-2.jpg" />
+                </picture>
+                <img src="./images\project\img@1x_s-2.jpg" alt="Ресторан Seafood" width="450" height="294" />
+                <div class="project__overlay">
+                  <p class="project__overlay-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                    компании или частном лице.
+                  </p>
+                </div>
               </div>
               <div class="project__name">
                 <h2 class="project__title">Ресторан<span lang="en">Seafood</span></h2>
@@ -129,15 +165,22 @@
           <li class="grid__cards project__item">
             <a class="link project__link" href="">
               <div class="project__card">
-              <img src="./images/img11.jpg" alt="Проект Prime" width="370" height="294" />
-            <div class="project__overlay">
-              <p class="project__overlay-text">
-                Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                компании или частном лице.
-              </p>
-            </div>
-            </div>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images\project\img@1x_s-3.jpg, ./images\project\img@2x_s-3.jpg" />
+                
+                  <source media="(min-width: 768px)" srcset="./images\project\img@1x-m-3.jpg, ./images\project\img@2x-m-3.jpg" />
+                
+                  <source media="(max-width: 767px)" srcset="./images\project\img@1x_lg-3.jpg, ./images\project\img@2x_lg-3.jpg" />
+                </picture>
+                <img src="./images\project\img@1x_s-3.jpg" alt="Проект Prime" width="450" height="294" />
+                <div class="project__overlay">
+                  <p class="project__overlay-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                    компании или частном лице.
+                  </p>
+                </div>
+              </div>
               <div class="project__name">
                 <h2 class="project__title">Проект<span lang="en">Prime</span></h2>
                 <p class="project__text">Маркетинг</p>
@@ -147,14 +190,21 @@
           <li class="grid__cards project__item">
             <a class="link project__link" href="">
               <div class="project__card">
-              <img src="./images/img12.jpg" alt="Проект Boxes" width="370" height="294" />
-                            <div class="project__overlay">
-                <p class="project__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                  компании или частном лице.
-                </p>
-              </div>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images\project\img@1x_s-4.jpg, ./images\project\img@2x_s-4.jpg" />
+                
+                  <source media="(min-width: 768px)" srcset="./images\project\img@1x-m-4.jpg, ./images\project\img@2x-m-4.jpg" />
+                
+                  <source media="(max-width: 767px)" srcset="./images\project\img@1x_lg-4.jpg, ./images\project\img@2x_lg-4.jpg" />
+                </picture>
+                <img src="./images\project\img@1x_s-4.jpg" alt="Проект Boxes" width="450" height="294" />
+                <div class="project__overlay">
+                  <p class="project__overlay-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                    компании или частном лице.
+                  </p>
+                </div>
               </div>
               <div class="project__name">
                 <h2 class="project__title">Проект<span lang="en">Boxes</span></h2>
@@ -164,15 +214,22 @@
           </li>
           <li class="grid__cards project__item">
             <a class="link project__link" href="">
-             <div class="project__card">
-              <img src="./images/img13.jpg" alt="Inspiration has no Borders" width="370" height="294" />
+              <div class="project__card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images\project\img@1x_s-5.jpg, ./images\project\img@2x_s-5.jpg" />
+                
+                  <source media="(min-width: 768px)" srcset="./images\project\img@1x-m-5.jpg, ./images\project\img@2x-m-5.jpg" />
+                
+                  <source media="(max-width: 767px)" srcset="./images\project\img@1x_lg-5.jpg, ./images\project\img@2x_lg-5.jpg" />
+                </picture>
+                <img src="./images\project\img@1x_s-5.jpg" alt="Inspiration has no Borders" width="450" height="294" />
                 <div class="project__overlay">
-                <p class="project__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                  компании или частном лице.
-                </p>
-              </div>
+                  <p class="project__overlay-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                    компании или частном лице.
+                  </p>
+                </div>
               </div>
               <div class="project__name">
                 <h2 class="project__title" lang="en">Inspiration has no Borders</h2>
@@ -182,15 +239,22 @@
           </li>
           <li class="grid__cards project__item">
             <a class="link project__link" href="">
-             <div class="project__card">
-              <img src="./images/img14.jpg" alt="Издание Limited Edition" width="370" height="294" />
+              <div class="project__card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images\project\img@1x_s-6.jpg, ./images\project\img@2x_s-6.jpg" />
+                
+                  <source media="(min-width: 768px)" srcset="./images\project\img@1x-m-6.jpg, ./images\project\img@2x-m-6.jpg" />
+                
+                  <source media="(max-width: 767px)" srcset="./images\project\img@1x_lg-6.jpg, ./images\project\img@2x_lg-6.jpg" />
+                </picture>
+                <img src="./images\project\img@1x_s-6.jpg" alt="Издание Limited Edition" width="450" height="294" />
                 <div class="project__overlay">
-                <p class="project__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                  компании или частном лице.
-                </p>
-              </div>
+                  <p class="project__overlay-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                    компании или частном лице.
+                  </p>
+                </div>
               </div>
               <div class="project__name">
                 <h2 class="project__title">Издание<span lang="en">Limited Edition</span></h2>
@@ -200,15 +264,22 @@
           </li>
           <li class="grid__cards project__item">
             <a class="link project__link" href="">
-             <div class="project__card">
-              <img src="./images/img15.jpg" alt="Проект LAB" width="370" height="294" />
+              <div class="project__card">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images\project\img@1x_s-7.jpg, ./images\project\img@2x_s-7.jpg" />
+                
+                  <source media="(min-width: 768px)" srcset="./images\project\img@1x-m-7.jpg, ./images\project\img@2x-m-7.jpg" />
+                
+                  <source media="(max-width: 767px)" srcset="./images\project\img@1x_lg-7.jpg, ./images\project\img@2x_lg-7.jpg" />
+                </picture>
+                <img src="./images\project\img@1x_s-7.jpg" alt="Проект LAB" width="450" height="294" />
                 <div class="project__overlay">
-                <p class="project__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                  компании или частном лице.
-                </p>
-              </div>
+                  <p class="project__overlay-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                    компании или частном лице.
+                  </p>
+                </div>
               </div>
               <div class="project__name">
                 <h2 class="project__title">Проект<span lang="en">LAB</span></h2>
@@ -219,7 +290,14 @@
           <li class="grid__cards project__item">
             <a class="link project__link" href="">
               <div class="project__card">
-              <img src="./images/img16.jpg" alt="Growing Business" width="370" height="294" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images\project\img@1x_s-8.jpg, ./images\project\img@2x_s-8.jpg" />
+                
+                  <source media="(min-width: 768px)" srcset="./images\project\img@1x-m-8.jpg, ./images\project\img@2x-m-8.jpg" />
+                
+                  <source media="(max-width: 767px)" srcset="./images\project\img@1x_lg-8.jpg, ./images\project\img@2x_lg-8.jpg" />
+                </picture>
+                <img src="./images\project\img@1x_s-8.jpg" alt="Growing Business" width="450" height="294" />
                 <div class="project__overlay">
                   <p class="project__overlay-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -227,7 +305,7 @@
                     компании или частном лице.
                   </p>
                 </div>
-                </div>
+              </div>
               <div class="project__name">
                 <h2 class="project__title" lang="en">Growing Business</h2>
                 <p class="project__text">Приложение</p>
@@ -241,7 +319,7 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer__part">
-        <a class="logo footer__logo" href="/" lang="en">Web<span class="footer__logo--part">Studio</span></a>
+        <a class="logo footer__logo" href="./" lang="en">Web<span class="footer__logo--part">Studio</span></a>
         <address class="footer__contacts">
           <ul class="list footer__list">
             <li class="footer__item">
@@ -306,7 +384,48 @@
       </div>
     </div>
   </footer>
-  <script src="./js/modal.js"></script>
+  <div class="mobile is-hidden" data-menu>
+    <div class="mobile-menu is-open">
+      <button class="menu__btn" type="button" data-menu-close>
+        <svg class="menu__close" width="40" height="40" aria-label="close">
+          <use class="menu__close-icon" href="./images/symbol-defs.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+<ul class="list menu__list">
+  <li class="menu__item">
+    <a class="menu__link link" href="index.html">Студия</a>
+  </li>
+  <li class="menu__item">
+    <a class="menu__link menu__link--current link" href="portfolio.html">Портфолио</a>
+  </li>
+  <li class="menu__item">
+    <a class="menu__link link" href="">Контакты</a>
+  </li>
+</ul>
+<div class="menu__contact">
+  <ul class="list">
+    <li class="menu__item">
+      <a class="link menu__phone" href="+380961111111">+38 096 111 11 11</a>
+    </li>
+    <li class="menu__item">
+      <a class="link menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </li>
+  </ul>
+</div>
+<ul class="list  menu__socials">
+  <li class="menu__social-item"><a class="link menu__social-link" href="" target="_blank" rel="noopener noreferrer"
+      aria-label="Instagram">Instagram</a></li>
+  <li class="menu__social-item"><a class="link menu__social-link" href="" target="_blank" rel="noopener noreferrer"
+      aria-label="Twitter">Twitter</a></li>
+  <li class="menu__social-item"><a class="link menu__social-link" href="" target="_blank" rel="noopener noreferrer"
+      aria-label="Facebook">Facebook</a></li>
+  <li class="menu__social-item"><a class="link menu__social-link" href="" target="_blank" rel="noopener noreferrer"
+      aria-label="LinkedIn">LinkedIn</a></li>
+</ul>
+    </div>
+  </div>
+  <script src="./js/model.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

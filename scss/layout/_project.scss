@@ -1,8 +1,21 @@
-.project__filter {
+.project__filter{
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
-  margin-bottom: 34px;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
 }
 .project__btn {
   font-family: inherit;
@@ -33,16 +46,17 @@
 
   @media screen and (min-width: 768px) {
     --item: 2;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      --item: 3;
-    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    --item: 3;
+  }
 }
 .project__link {
   display: flex;
   flex-direction: column;
   transition: box-shadow var(--anime-basic);
+  height: 100%;
 
   &:focus,
   &:hover {
@@ -84,6 +98,12 @@
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
+  
+
+@media screen and (min-width: 768px) {
+      flex-grow: 1;
+  }
+
 }
 .project__title {
   font-weight: 700;
