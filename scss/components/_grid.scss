@@ -6,7 +6,10 @@
     @media screen and (min-width: 768px) {
         --item: 2;
     }
- }
+    
+          @media screen and (min-width: 1200px) {
+              --item: 4;
+          }
 
 .grid__cards {
   
