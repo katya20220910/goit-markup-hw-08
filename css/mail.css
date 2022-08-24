@@ -115,6 +115,11 @@ img {
     --item: 2;
   }
 }
+@media screen and (min-width: 1200px) {
+  .grid {
+    --item: 4;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .grid__cards {
