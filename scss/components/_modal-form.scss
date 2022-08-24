@@ -103,6 +103,11 @@ line-height: calc(23 / 20);
   cursor: pointer;
   margin-bottom: 30px;
 }
+
+.form__agreement-icon {
+  flex-shrink: 0;
+}
+
 .form__agreement-uncheck {
   .form__checkbox:hover + .form__agreement-icon &,
   .form__checkbox:focus + .form__agreement-icon & {

@@ -1,20 +1,21 @@
 .project__filter{
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 15px 8px;
   justify-content: flex-start;
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    gap: 8px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     gap: 8px;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
   }
 }
 .project__btn {
@@ -74,10 +75,14 @@
   bottom: 0;
   height: 100%;
   width: 100%;
-  padding: 63px 24px;
+  padding: 24px;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform var(--anime-basic);
+
+  @media screen and (min-width: 480px) {
+  padding: 63px 24px;
+  }
 
   .project__link:hover &,
   .project__link:focus & {
@@ -86,6 +91,8 @@
 }
 .project__overlay-text {
   font-style: normal;
+  overflow: auto;
+  height: 100%;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(28 / 18);
@@ -100,11 +107,10 @@
   padding-left: 24px;
   
 
-@media screen and (min-width: 768px) {
-      flex-grow: 1;
+ flex-grow: 1;
   }
 
-}
+
 .project__title {
   font-weight: 700;
   font-size: 18px;
