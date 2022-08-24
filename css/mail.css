@@ -121,11 +121,9 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .grid__cards {
-    -ms-flex-preferred-size: calc((100% - var(--indent-grid) * (var(--item) - 1)) / var(--item));
-        flex-basis: calc((100% - var(--indent-grid) * (var(--item) - 1)) / var(--item));
-  }
+.grid__cards {
+  -ms-flex-preferred-size: calc((100% - var(--indent-grid) * (var(--item) - 1)) / var(--item));
+      flex-basis: calc((100% - var(--indent-grid) * (var(--item) - 1)) / var(--item));
 }
 
 .logo {
@@ -854,7 +852,7 @@ img {
   .hero__title {
     font-size: 44px;
     line-height: 1.3636363636;
-    width: 696px;
+    max-width: 696px;
   }
 }
 
@@ -1016,22 +1014,12 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   height: 92px;
-  min-width: 210px;
+  max-width: 210px;
   border: 1px solid currentColor;
   border-radius: 4px;
   color: var(--icon);
   -webkit-transition: color var(--anime-basic);
   transition: color var(--anime-basic);
-}
-@media screen and (min-width: 768px) {
-  .client__logo {
-    min-width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .client__logo {
-    min-width: 170px;
-  }
 }
 .client__logo:focus, .client__logo:hover {
   color: var(--accent-text-cl);
